@@ -14,6 +14,7 @@ namespace ACME.LearningCenterPlatform.API.Publishing.Interfaces.REST;
 [ApiController]
 [Route("api/v1/[controller]")]
 [Produces(MediaTypeNames.Application.Json)]
+[Tags("Categories")]
 public class CategoriesController(
     ICategoryCommandService categoryCommandService,
     ICategoryQueryService categoryQueryService

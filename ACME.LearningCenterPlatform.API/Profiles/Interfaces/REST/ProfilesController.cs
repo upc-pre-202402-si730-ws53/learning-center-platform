@@ -11,7 +11,7 @@ namespace ACME.LearningCenterPlatform.API.Profiles.Interfaces.REST;
 [ApiController]
 [Route("api/v1/[controller]")]
 [Produces(MediaTypeNames.Application.Json)]
-[Tags("Profiles", "Available Profile Endpoints")]
+[SwaggerTag("Available Profile Endpoints.")]
 public class ProfilesController(
     IProfileCommandService profileCommandService,
     IProfileQueryService profileQueryService)

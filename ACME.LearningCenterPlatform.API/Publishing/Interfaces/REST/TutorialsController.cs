@@ -14,7 +14,7 @@ namespace ACME.LearningCenterPlatform.API.Publishing.Interfaces.REST;
 [ApiController]
 [Route("api/v1/[controller]")]
 [Produces(MediaTypeNames.Application.Json)]
-[Tags("Tutorials")]
+[SwaggerTag("Available Tutorial Endpoints.")]
 public class TutorialsController(
     ITutorialCommandService tutorialCommandService,
     ITutorialQueryService tutorialQueryService

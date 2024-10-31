@@ -1,3 +1,4 @@
+using ACME.LearningCenterPlatform.API.Profiles.Domain.Model.Aggregates;
 using ACME.LearningCenterPlatform.API.Publishing.Domain.Model.Aggregates;
 using ACME.LearningCenterPlatform.API.Publishing.Domain.Model.Entities;
 using ACME.LearningCenterPlatform.API.Shared.Infrastructure.Persistence.EFC.Configuration.Extensions;
@@ -53,6 +54,10 @@ public class AppDbContext(DbContextOptions options) : DbContext(options)
             .WithOne(t => t.Category)
             .HasForeignKey(t => t.CategoryId)
             .HasPrincipalKey(c => c.Id);
+        
+        // Profiles Context
+        
+        
         
         builder.UseSnakeCaseNamingConvention();
     }

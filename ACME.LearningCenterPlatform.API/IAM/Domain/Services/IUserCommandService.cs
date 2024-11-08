@@ -14,6 +14,10 @@ public interface IUserCommandService
     /// <summary>
     /// Handle sign-up command 
     /// </summary>
+    /// <remarks>
+    /// This method is responsible for handling the sign-up command.
+    /// It checks if the username already exists, hashes the password, creates a new user, and adds it to the repository.
+    /// </remarks> 
     /// <param name="command">
     /// The sign-up command
     /// </param>
@@ -25,6 +29,10 @@ public interface IUserCommandService
     /// <summary>
     /// Handle sign-in command 
     /// </summary>
+    /// <remarks>
+    /// This method is responsible for handling the sign-in command.
+    /// It finds the user by username, verifies the password, generates a token, and returns the user and token.
+    /// </remarks> 
     /// <param name="command">
     /// The sign-in command
     /// </param>

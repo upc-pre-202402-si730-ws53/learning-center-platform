@@ -17,8 +17,8 @@ public static class SignUpCommandFromResourceAssembler
     /// <returns>
     /// The <see cref="SignUpCommand"/> object.
     /// </returns>
-    public static SignUpCommand ToCommandFromResource(SignInResource resource)
+    public static SignUpCommand ToCommandFromResource(SignUpResource resource)
     {
-        return new SignUpCommand(resource.UserName, resource.Password);
+        return new SignUpCommand(resource.Username, resource.Password);
     }
 }

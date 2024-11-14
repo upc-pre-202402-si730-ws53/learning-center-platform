@@ -143,7 +143,6 @@ builder.Services.AddScoped<ITokenService, TokenService>();
 builder.Services.AddScoped<IHashingService, HashingService>();
 builder.Services.AddScoped<IIamContextFacade, IamContextFacade>();
 
-
 var app = builder.Build();
 
 // Verify Database Objects are Created

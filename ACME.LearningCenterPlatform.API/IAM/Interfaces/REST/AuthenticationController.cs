@@ -13,14 +13,14 @@ namespace ACME.LearningCenterPlatform.API.IAM.Interfaces.REST;
 /// </summary>
 /// <remarks>
 /// This controller provides the authentication endpoints.
-/// The authentication endpoints are used to sign-in and sign-up to the platform.
+/// The authentication endpoints are used to sign in and sign-up to the platform.
 /// </remarks>
 /// <param name="userCommandService">
 /// <see cref="IUserCommandService"/> User command service
 /// </param>
 [Microsoft.AspNetCore.Authorization.Authorize]
 [ApiController]
-[Route("/api/v1/[controller")]
+[Route("/api/v1/[controller]")]
 [Produces(MediaTypeNames.Application.Json)]
 [SwaggerTag("Available Authentication endpoints")]
 public class AuthenticationController(IUserCommandService userCommandService) : ControllerBase

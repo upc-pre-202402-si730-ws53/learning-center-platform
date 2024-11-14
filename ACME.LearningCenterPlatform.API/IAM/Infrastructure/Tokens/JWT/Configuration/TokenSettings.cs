@@ -1,4 +1,4 @@
-namespace ACME.LearningCenterPlatform.API.IAM.Infrastructure.Tokens.Configuration;
+namespace ACME.LearningCenterPlatform.API.IAM.Infrastructure.Tokens.JWT.Configuration;
 
 /// <summary>
 /// Token settings. 

@@ -2,12 +2,12 @@ using System.Security.Claims;
 using System.Text;
 using ACME.LearningCenterPlatform.API.IAM.Application.Internal.OutboundServices;
 using ACME.LearningCenterPlatform.API.IAM.Domain.Model.Aggregates;
-using ACME.LearningCenterPlatform.API.IAM.Infrastructure.Tokens.Configuration;
+using ACME.LearningCenterPlatform.API.IAM.Infrastructure.Tokens.JWT.Configuration;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.JsonWebTokens;
 using Microsoft.IdentityModel.Tokens;
 
-namespace ACME.LearningCenterPlatform.API.IAM.Infrastructure.Tokens.Services;
+namespace ACME.LearningCenterPlatform.API.IAM.Infrastructure.Tokens.JWT.Services;
 
 /// <summary>
 /// Token service 

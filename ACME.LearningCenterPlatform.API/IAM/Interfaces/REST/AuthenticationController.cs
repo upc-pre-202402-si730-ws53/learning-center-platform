@@ -18,7 +18,7 @@ namespace ACME.LearningCenterPlatform.API.IAM.Interfaces.REST;
 /// <param name="userCommandService">
 /// <see cref="IUserCommandService"/> User command service
 /// </param>
-[Microsoft.AspNetCore.Authorization.Authorize]
+[Authorize]
 [ApiController]
 [Route("/api/v1/[controller]")]
 [Produces(MediaTypeNames.Application.Json)]

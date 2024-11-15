@@ -39,7 +39,7 @@ public class IamContextFacade(
         return result?.Id ?? 0;
     }
 
-    
+    // <inheritdoc />
     public async Task<string> FetchUsernameByUserId(int userId)
     {
         var getUserByIdQuery = new GetUserByIdQuery(userId);
